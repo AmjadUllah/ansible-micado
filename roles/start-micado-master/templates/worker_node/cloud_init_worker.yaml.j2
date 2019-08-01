@@ -111,7 +111,7 @@ runcmd:
   - systemctl enable strongswan
 
   # Connect to cluster
-
+  - docker pull quay.io/coreos/flannel:v0.11.0-amd64
   - {{ join_command.stdout }}
 
   # These removes the temporary scripts, certs and
